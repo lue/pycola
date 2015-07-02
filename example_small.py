@@ -21,8 +21,7 @@
 ########################################################################
 ########################################################################
 
-if __name__ == '__main__':
-
+def run():
     import numpy as np
     import matplotlib.pyplot as plt
     from aux import boundaries
@@ -209,7 +208,7 @@ if __name__ == '__main__':
 
     print "Making a figure ..."
     # grid size for figure array
-    ngrid=2*512
+    ngrid=2*128
     # physical size of figure array
     cutsize=12.0#Mpc/h
     
@@ -272,3 +271,6 @@ if __name__ == '__main__':
     plt.axis('off')
     plt.show()
 
+
+if __name__ == '__main__':
+    run()
