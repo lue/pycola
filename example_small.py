@@ -21,7 +21,8 @@
 ########################################################################
 ########################################################################
 
-def run():
+
+def run(music_file):
     import numpy as np
     import matplotlib.pyplot as plt
     from aux import boundaries
@@ -31,8 +32,6 @@ def run():
     from potential import initialize_density
     
     # Set up the parameters from the MUSIC ic snapshot:
-    # music_file="/media/stuff/ohahn-music-116353436ee6/ic_za.hdf5" # CHANGE!
-    music_file="ic.hdf5"
 
     # Set up according to instructions for 
     # aux.boundaries()
@@ -273,4 +272,4 @@ def run():
 
 
 if __name__ == '__main__':
-    run()
+    run("/Users/patrick/astro/code/pycola/ic.hdf5")
